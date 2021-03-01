@@ -1,0 +1,33 @@
+//antialiased,subpixel-antialiased,none
+$font-smoothing: antialiased;
+
+//auto,optimizeSpeed,optimizeLegibility,geometricPrecision
+$text-rendering: auto;
+
+$base-font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+$base-font-size: 14px;
+$base-font-color: #151515;
+$base-background-color: #fff;
+
+$site-size: 1060px;
+
+// colors
+$color-primary: #164184; // dark blue
+
+// easing / animation
+$duration: .25s;
+$duration-long: .4s;
+$easing: ease-in-out;
+$delay: .35s;
+
+//breakpoints
+$breakpoint-mobile: 767px;
+
+//path
+$path-assets: "/wp-content/themes/diversity/assets";
+$path-image: "#{$path-assets}/images";
+$path-font: "#{$path-assets}/fonts";
+
+$font-montserrat: 'Montserrat', sans-serif;
+
+// $font-noto: ヒラギノ明朝 Pro W3,YuMincho,游明朝,"Noto Serif JP",Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;

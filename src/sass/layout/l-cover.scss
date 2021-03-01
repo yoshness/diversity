@@ -1,0 +1,47 @@
+.l-cover {
+  padding-top: 6.8rem;
+  text-align: center;
+}
+
+.l-cover-bg {
+  position: relative;
+  padding-top: calc(525 / 1280 * 100%);
+}
+
+.l-cover__title {
+	position: absolute;
+  top: calc(166 / 525 * 100%);
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.l-cover__title-en {
+	position: relative;
+  margin-bottom: 1.95312vw;
+	padding-bottom: 3.51562vw;
+
+	&:before {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: calc(50% - 100px);
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    content: '';
+    background-color: #fff;
+	}
+
+	img {
+    width: 31.10078vw;
+		height: 5.1875vw;
+	}
+}
+
+.l-cover__title-ja {
+	line-height: 2.45rem;
+  white-space: nowrap;
+  letter-spacing: .4em;
+}
