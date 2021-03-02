@@ -100,7 +100,37 @@
 		</script>
 
 		<link href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" rel="stylesheet">
-		<link rel="canonical" href="https://www.kentaku.co.jp/diversity/interview/">
+
+		<?php
+			$page_id = '';
+			if(is_front_page()) {
+				$page_id = 'top';
+			}
+			else if(is_page('Diversity Management')) {
+				$page_id = 'diversity-management';
+			}
+			else if(is_page('Womenomics')) {
+				$page_id = 'womenomics';
+			}
+			else if(is_page('Work Life Balance')) {
+				$page_id = 'work-life-balance';
+			}
+			else if(is_page('Work Style Reform')) {
+				$page_id = 'work-style-reform';
+			}
+			else if(is_page('Inclusion')) {
+				$page_id = 'inclusion';
+			}
+			else if(is_post_type_archive('interview') || get_post_type() == 'interview') {
+				$page_id = 'interview';
+			}
+		?>
+
+		<?php if(is_front_page()) { ?>
+			<link rel="canonical" href="https://www.kentaku.co.jp/diversity/">
+		<?php } else { ?>
+			<link rel="canonical" href="https://www.kentaku.co.jp/diversity/<?php echo $page_id;?>">
+		<?php } ?>
 
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/style-new.css?v=06">
 	</head>
@@ -115,28 +145,6 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F3MGL"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-
-	<?php
-		$page_id = '';
-		if(is_front_page()) {
-			$page_id = 'top';
-		}
-		else if(is_page('Diversity Management')) {
-			$page_id = 'diversity-management';
-		}
-		else if(is_page('Womenomics')) {
-			$page_id = 'womenomics';
-		}
-		else if(is_page('Work Life Balance')) {
-			$page_id = 'work-life-balance';
-		}
-		else if(is_page('Work Style Reform')) {
-			$page_id = 'work-style-reform';
-		}
-		else if(is_page('Inclusion')) {
-			$page_id = 'inclusion';
-		}
-	?>
 
 	<div id="wrapper" class="id_<?php echo $page_id; ?>">
 		<div id="inner">

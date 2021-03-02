@@ -8,7 +8,8 @@ get_header();
 
 <main class="l-single">
 	<div class="l-cover l-cover--detail">
-		<div class="l-cover-bg u-bg-fill" style="background-image: url(<?php echo IMAGE_URL;  ?>detail/cover.jpg);">
+		<?php $featured_image = get_field('cover'); ?>
+		<div class="l-cover-bg u-bg-fill" style="background-image: url(<?php echo $featured_image; ?>);">
 	</div>
 	<div class="l-single__eyecatch u-flex">
 		<div class="l-single__eyecatch-left">
