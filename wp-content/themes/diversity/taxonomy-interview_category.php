@@ -1,9 +1,8 @@
 <?php
-/* 
-Template Name: Interview Archive
-*/
+/**
+ * The template for displaying Interview Archive
+ */
 get_header();
-
 ?>
 
 <main class="l-interview">
@@ -29,38 +28,56 @@ get_header();
 			</div>
 		</div>
 	</section>
+	<?php
+	    $category = get_the_terms( $post->ID, 'interview_category' );
+
+      	$article_args = array(
+			'post_type'      => 'interview',
+			'interview_category' => $category[0]->slug,
+	    	'posts_per_page' => -1,
+	    	'order'          => 'DESC',
+	    	'post_status'    => 'publish'
+		);
+		$articles = new WP_Query($article_args);
+		if ($articles->have_posts()) {
+    ?>
 	<section class="l-interview__content">
 		<div class="l-container">
 			<h2>インタビュー一覧</h2>
-			<?php
-				$categories = ['女性役員', 'ダイバーシティ<br>マネジメント', '働き方改革', 'イクメン', 'イクボス', '女性活躍推進', '両立支援', 'シニア人材の活躍'];
-			?>
+			<?php $categories = get_the_terms( get_the_ID(), 'interview_category' ); ?>
 			<ul class="l-interview__categories u-flex">
-				<?php for($i = 0; $i < count($categories); $i++) { ?>
+				<?php foreach($categories as $cat) { ?>
 				<li>
-					<a href="#" class="u-flex u-flex--center"><?php echo $categories[$i]; ?></a>
+					<a href="<?php echo get_category_link( $cat->term_id ) ?>" class="u-flex u-flex--center"><?php echo $cat->name; ?></a>
 				</li>
 				<?php } ?>
 			</ul>
+			
 			<ul class="l-interview__items u-flex">
-				<?php for($i = 0; $i < 9; $i++) { ?>
+				<?php 
+					while ($articles->have_posts()): $articles->the_post(); 
+						$featured_image = get_field('cover');
+				?>
 				<li class="interview-block">
-					<a href="#">
-						<img src="<?php echo IMAGE_URL;  ?>interview/dummy.jpg" alt="">
-						<p class="interview-block__tagline">個性を引き出し、個性で組織する。そんな会社であり続けたい。</p>
-						<p class="interview-block__company">大東建託株式会社</p>
-						<p class="interview-block__department">ダイバーシティマネジメント　イクボス</p>
-						<p class="interview-block__position">業務推進部　部長</p>
+					<a href="<?php echo the_permalink(); ?>">
+						<div class="interview-block__image">
+							<img src="<?php echo $featured_image; ?>" alt="">
+						</div>
+						<p class="interview-block__tagline"><?php the_field('tagline'); ?></p>
+						<p class="interview-block__company"><?php the_field('company'); ?></p>
+						<p class="interview-block__department"><?php the_field('department'); ?></p>
+						<p class="interview-block__position"><?php the_field('position'); ?></p>
 						<h3 class="interview-block__name">
-							<span class="interview-block__name-ja">濱田 洋平</span>
-							<span class="interview-block__name-en">YOUHEI HAMADA</span>
+							<span class="interview-block__name-ja"><?php the_title(); ?></span>
+							<span class="interview-block__name-en"><?php the_field('en_name'); ?></span>
 						</h3>
 					</a>
 				</li>
-				<?php } ?>
+				<?php endwhile; wp_reset_postdata(); ?>
 			</ul>
 		</div>
 	</section>
+	<?php } ?>
 </main>
 
 <?php

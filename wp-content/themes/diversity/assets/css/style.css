@@ -3191,6 +3191,97 @@ a:active
     }
 }
 
+#wrapper.id_top .main-inner .mainItem_interview
+{
+    padding: 8.34rem 2rem 10.59rem;
+
+    background-image: url(../resource/img/top/pic_main06@2x.jpg);
+}
+
+@media (max-width: 750px)
+{
+    #wrapper.id_top .main-inner .mainItem_interview
+    {
+        padding: 4rem 2rem 3rem;
+
+        background-image: none;
+    }
+}
+
+#wrapper.id_top .main-inner .mainItem_interview::before
+{
+    background-color: #164184;
+}
+
+#wrapper.id_top .main-inner .mainItem_interview .mainItem-tit
+{
+    margin-left: -4rem;
+}
+
+@media (max-width: 750px)
+{
+    #wrapper.id_top .main-inner .mainItem_interview .mainItem-tit
+    {
+        margin-left: 0;
+    }
+}
+
+#wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_en
+{
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 750px)
+{
+    #wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_en
+    {
+        margin-bottom: 1.5rem;
+    }
+}
+
+#wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_en img
+{
+    width: 27.88047vw;
+    height: 5.16484vw;
+}
+
+@media (max-width: 750px)
+{
+    #wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_en img
+    {
+        width: 14.111rem;
+        height: 3.494rem;
+    }
+}
+
+#wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_ja
+{
+    line-height: 2;
+
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 750px)
+{
+    #wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_ja
+    {
+        margin-bottom: 1rem;
+    }
+}
+
+#wrapper.id_top .main-inner .mainItem_interview .mainItem-imgWrapper
+{
+    margin-left: -4rem;
+}
+
+@media (max-width: 750px)
+{
+    #wrapper.id_top .main-inner .mainItem_interview .mainItem-imgWrapper
+    {
+        margin-left: 1rem;
+    }
+}
+
 #wrapper.id_top .mv
 {
     height: 100vh;

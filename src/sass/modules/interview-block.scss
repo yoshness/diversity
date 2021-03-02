@@ -1,9 +1,23 @@
 .interview-block {
   text-align: left;
 
+  &:hover {
+    .interview-block__image {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.interview-block__image {
+  overflow: hidden;
+  width: 100%;
+
   img {
     width: 100%;
     height: 235px;
+    transition: transform .45s ease;
 
     object-fit: cover;
   }
@@ -38,6 +52,7 @@
   font-size: 1.75rem;
   font-weight: 500;
   letter-spacing: .18em;
+  text-transform: uppercase;
 }
 
 .interview-block__name-ja {

@@ -52,6 +52,7 @@
   margin-bottom: 10px;
   font-weight: normal;
   letter-spacing: .25em;
+  text-transform: uppercase;
 }
 
 .l-single__eyecatch-company,
@@ -66,6 +67,7 @@
   margin-top: 10px;
 
   li {
+    margin-bottom: 10px;
     padding: 8px 15px;
     color: $color-primary;
     border-radius: 50px;
@@ -78,7 +80,7 @@
 }
 
 .l-single__eyecatch-note {
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 1.2rem;
 }
 

@@ -122,6 +122,17 @@ get_header();
     </a>
   </div>
 
+  <!--mainItem-->
+  <a class="mainItem mainItem_interview" href="interview">
+    <h2 class="mainItem-tit">
+      <span class="mainItem-tit_en">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/letter_main06.svg" alt="Interview">
+      </span>
+      <span class="mainItem-tit_ja">社員インタビュー</span>
+    </h2>
+    <p class="mainItem-imgWrapper"><img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/common/arrow_76.svg" alt="矢印アイコン"></p>
+  </a><!--/mainItem-->
+
   </div>
 </div>
   <!-- ************************************************************
