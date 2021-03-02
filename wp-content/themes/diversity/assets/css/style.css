@@ -1364,7 +1364,7 @@ img
 
 .drawer .drawer-inner .imgArea-pic:nth-child(6)
 {
-    background-image: url(../resource/img/common/pic_drawer04@2x.jpg);
+    background-image: url(../resource/img/common/pic_drawer06@2x.jpg);
 }
 
 .drawer .drawer-inner .imgArea-pic:nth-child(6)::before
@@ -1372,7 +1372,7 @@ img
     width: 12rem;
     height: 15rem;
 
-    background-image: url(../resource/img/common/deco_drawer04@2x.png);
+    background-image: url(../resource/img/common/deco_drawer06@2x.png);
 }
 
 

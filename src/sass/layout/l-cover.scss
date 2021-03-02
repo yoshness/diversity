@@ -1,6 +1,13 @@
 .l-cover {
   padding-top: 6.8rem;
   text-align: center;
+
+  &.l-cover--detail {
+    .l-cover-bg {
+      width: 80%;
+      margin-left: auto;
+    }
+  }
 }
 
 .l-cover-bg {
@@ -9,39 +16,39 @@
 }
 
 .l-cover__title {
-	position: absolute;
+  position: absolute;
   top: calc(166 / 525 * 100%);
   left: 50%;
-  transform: translate(-50%);
   text-align: center;
   color: #fff;
+  transform: translate(-50%);
 }
 
 .l-cover__title-en {
-	position: relative;
+  position: relative;
   margin-bottom: 1.95312vw;
-	padding-bottom: 3.51562vw;
+  padding-bottom: 3.51562vw;
 
-	&:before {
+  &:before {
+    display: inline-block;
+    width: 200px;
+    height: 1px;
     position: absolute;
     z-index: -1;
     bottom: 0;
     left: calc(50% - 100px);
-    display: inline-block;
-    width: 200px;
-    height: 1px;
     content: '';
     background-color: #fff;
-	}
+  }
 
-	img {
+  img {
     width: 31.10078vw;
-		height: 5.1875vw;
-	}
+    height: 5.1875vw;
+  }
 }
 
 .l-cover__title-ja {
-	line-height: 2.45rem;
+  line-height: 2.45rem;
   white-space: nowrap;
   letter-spacing: .4em;
 }

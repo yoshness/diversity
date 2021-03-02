@@ -1,0 +1,157 @@
+.l-single__eyecatch {
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.l-single__eyecatch-left {
+  width: 60%;
+  position: relative;
+  margin-top: -150px;
+  padding: 80px 10% 50px 15%;
+  background-color: #fff;
+}
+
+.l-single__eyecatch-tagline {
+  margin-bottom: 40px;
+  font-size: 3.3rem;
+  font-weight: normal;
+  letter-spacing: .25em;
+}
+
+.l-single__eyecatch-history {
+  line-height: 1.8;
+  opacity: .3;
+}
+
+.l-single__eyecatch-right {
+  width: 36%;
+  position: relative;
+  top: -50px;
+  padding: 50px 4vw;
+  color: #fff;
+  background-color: $color-primary;
+
+  h2 {
+    margin-top: 15px;
+    font-weight: 500;
+    line-height: 1.8;
+  }
+}
+
+.l-single__title-ja {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 3.2rem;
+  font-weight: normal;
+  letter-spacing: .25em;
+}
+
+.l-single__title-en {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: normal;
+  letter-spacing: .25em;
+}
+
+.l-single__eyecatch-company,
+.l-single__eyecatch-department,
+.l-single__eyecatch-position {
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.l-single__eyecatch-tags {
+  justify-content: initial;
+  margin-top: 10px;
+
+  li {
+    padding: 8px 15px;
+    color: $color-primary;
+    border-radius: 50px;
+    background-color: #fff;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.l-single__eyecatch-note {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.l-single__block {
+  margin-bottom: 180px;
+  text-align: left;
+
+  img {
+    width: 48.5%;
+    height: 550px;
+
+    object-fit: cover;
+  }
+
+  &.l-single__block--alternate {
+    padding: 150px 0;
+    color: #fff;
+    background: linear-gradient(to right, $color-primary 85%, #fff 0);
+
+    img {
+      order: 2;
+    }
+    .l-single__block-content {
+      padding-right: 0;
+      padding-left: 15%;
+
+      h3 {
+        margin-top: 50px;
+      }
+    }
+  }
+  &.l-single__block--wide {
+    .l-single__block-content {
+      width: 100%;
+      padding: 0;
+
+      h3 {
+        margin-top: 0;
+      }
+    }
+    img {
+      width: 100%;
+      margin-top: 50px;
+
+      order: 2;
+    }
+  }
+}
+
+.l-single__block-content {
+  width: 48.5%;
+  padding-right: 15%;
+
+  h3 {
+    margin: 100px 0 50px;
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 2;
+  }
+  p {
+    margin-bottom: 20px;
+    line-height: 2;
+  }
+}
+
+.l-single__related {
+  padding-bottom: 150px;
+  background: linear-gradient(to bottom, #fff 30%, #f7f7f7 0);
+
+  h2 {
+    margin-bottom: 70px;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: .25em;
+  }
+}
