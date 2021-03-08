@@ -158,80 +158,47 @@ get_header();
 
       <div class="card-inner" id="card-inner">
         <!-- card-list -->
+        <?php
+            $article_args = array(
+            'post_type'      => 'featured',
+            'posts_per_page' => -1,
+            'order'          => 'ASC',
+            'post_status'    => 'publish'
+        );
+        $articles = new WP_Query($article_args);
+        if ($articles->have_posts()) {
+        ?>
         <ul class="card-list" id="card-list">
-
+          <?php 
+            while ($articles->have_posts()): $articles->the_post(); 
+              $featured_image = get_the_post_thumbnail_url(get_the_ID(),'full'); 
+          ?>
           <li class="card-item">
-            <a class="card-link" href="/corporate/pr/info/2020/aqehc4000000e51q-att/worklifebalance_0213.pdf" target="_blank" rel="noopener noreferrer">
-              <p class="card-txt onlyPC">2019.4.23</p>
+            <a class="card-link" href="<?php the_field('url'); ?>" <?php echo get_field('external') == true ? 'target="_blank" rel="noopener noreferrer"' : ''; ?>>
+              <p class="card-txt onlyPC"><?php echo get_the_date('Y.m.d'); ?></p>
               <div class="card-img">
                 <img 
-                  src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/sp/pic_topic01@2x.jpg"
-                  alt="全ての従業員の活躍を目指すプロジェクト「いろどりLAB」の始動"
-                  class="upto1200"
+                  src="<?php echo $featured_image; ?>"
+                  class="upto1200" 
+                  alt="<?php the_title(); ?>"
                 >
                 <img 
-                  src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic01.jpg"
-                  srcset="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic01.jpg 1x, 
-                          <?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic01@2x.jpg 2x"
+                  src="<?php echo $featured_image; ?>"
+                  srcset="<?php echo $featured_image; ?> 1x, 
+                          <?php echo $featured_image; ?> 2x"
                   class="from1201"
-                  alt="全ての従業員の活躍を目指すプロジェクト「いろどりLAB」の始動"
+                  alt="<?php the_title(); ?>"
                 >
               </div>
               <div class="txtArea">
-                <p class="txtArea-txt onlySP">2019.4.23</p>
-                <p class="txtArea-tit">全ての従業員の活躍を目指すプロジェクト「いろどりLAB」の始動</p>
+                <p class="txtArea-txt onlySP"><?php echo get_the_date('Y.m.d'); ?></p>
+                <p class="txtArea-tit"><?php echo the_title(); ?></p>
               </div>
             </a>
           </li>
-
-          <li class="card-item">
-            <a class="card-link" href="/diversity/work-life-balance/#childcare">
-              <p class="card-txt onlyPC">2020.4.1</p>
-              <div class="card-img">
-                  <img 
-                    src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/sp/pic_topic02@2x.jpg"
-                    alt="2019年度男性育児休業取得者100"
-                    class="upto1200"
-                  >
-                  <img 
-                    src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic02.jpg"
-                    srcset="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic02.jpg 1x, 
-                            <?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic02@2x.jpg 2x"
-                    alt="2019年度男性育児休業取得者100%"
-                    class="from1201"
-                  >
-              </div>
-              <div class="txtArea">
-                <p class="txtArea-txt onlySP">2020.4.1</p>
-                <p class="txtArea-tit">2019年度男性育児休業取得者100%</p>
-              </div>
-            </a>
-          </li>
-
-          <li class="card-item">
-            <a class="card-link" href="/corporate/pr/info/2020/aqehc4000000e51q-att/worklifebalance_0213.pdf" target="_blank" rel="noopener noreferrer">
-              <p class="card-txt onlyPC">2020.2.13</p>
-              <div class="card-img">
-                <img 
-                  src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/sp/pic_topic03@2x.jpg"
-                  alt="「不妊治療」「マタニティー」を支援する新制度導入"
-                  class="upto1200"
-                >
-                <img 
-                  src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic03.jpg"
-                  srcset="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic03.jpg 1x, 
-                          <?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic03@2x.jpg 2x"
-                  alt="「不妊治療」「マタニティー」を支援する新制度導入"
-                  class="from1201"
-                >
-              </div>
-              <div class="txtArea">
-                <p class="txtArea-txt onlySP">2020.2.13</p>
-                <p class="txtArea-tit">「不妊治療」「マタニティー」を支援する新制度導入</p>
-              </div>
-            </a>
-          </li>
+          <?php endwhile; wp_reset_postdata(); ?>
         </ul><!-- /card-list -->
+        <?php } ?>
       </div>
     </div><!-- /card -->
   </div>

@@ -83,3 +83,31 @@ $interview_args = array(
     'menu_position' => 8,
 );
 register_post_type( 'interview', $interview_args );
+
+/*
+Register Featured Post Type
+*/
+
+$interview_args = array(
+    'labels' => array(
+        'name'               => 'Featured Posts',
+        'singular_name'      => 'Featured Post',
+        'add_new'            => 'Add New',
+        'add_new_item'       => 'Add New',
+        'edit_item'          => 'Edit Featured Post',
+        'new_item'           => 'New Featured Post',
+        'view_item'          => 'View Featured Post',
+        'search_items'       => 'Search Featured Posts',
+        'not_found'          => 'No Featured Posts Found',
+        'not_found_in_trash' => 'No Featured Posts In The Trash'
+    ),
+    'description' => 'Featured Posts',
+    'public' => false,
+    'has_archive' => false,
+    'show_ui' => true,
+    'hierarchical' => false,
+    'supports' => array( 'title', 'editor', 'thumbnail'),
+    'rewrite' => array('slug' => 'featured', 'with_front' => false),
+    'menu_position' => 9,
+);
+register_post_type( 'featured', $interview_args );
