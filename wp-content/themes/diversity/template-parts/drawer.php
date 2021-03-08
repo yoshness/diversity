@@ -54,7 +54,7 @@
 				<li class="menuArea-item menuArea-item_interview hover_op03">
 					<a class="menuArea-link" href="/diversity/interview/" data-id="pic_inclusion">
 						<p class="menuArea-tit_en">
-							<img src="<?php echo IMAGE_URL; ?>interview/title.png" alt="Interview">
+							<img src="<?php echo IMAGE_URL; ?>interview/title-menu.png" alt="Interview">
 						</p>
 						<p class="menuArea-tit_ja">社員インタビュー</p>
 					</a>

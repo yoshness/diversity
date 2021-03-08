@@ -87,6 +87,41 @@ get_header();
     </div><!-- /imgList -->
   </div>
 
+  <div class="l-inclusion__content">
+    <div class="l-container">
+      <h3>大東建託の障がい者雇用</h3>
+      <ul class="l-inclusion__list">
+        <li class="l-inclusion__item u-flex">
+          <div class="l-inclusion__item-left">
+            <h4>パーソナルファイルの作成</h4>
+            <p>入社後は個々の体調などを定期的に確認するパーソナルファイル(社内システム)を活用して状況確認を行っています。 一人ひとりのコンディションを把握することで些細な体調の変化に気づき、上司や本社の統括部門が必要に応じてフォローし ています。</p>
+          </div>
+          <img src="<?php echo IMAGE_URL;  ?>inclusion/item-1.jpg" alt="">
+        </li>
+        <li class="l-inclusion__item u-flex">
+          <div class="l-inclusion__item-left">
+            <h4>教育とバックアップ体制</h4>
+            <p>各支店の実務担当から直接業務指導を行っていますが、万が一実務担当が不在の状態でも業務の対応方法を自分で 調べることもできるように、社内システムで閲覧可能なマニュアルや動画で視聴可能なマニュアルを用意しています。</p>
+          </div>
+          <img src="<?php echo IMAGE_URL;  ?>inclusion/item-2.jpg" alt="">
+        </li>
+        <li class="l-inclusion__item u-flex">
+          <div class="l-inclusion__item-left">
+            <h4>特例子会社との連携 ※</h4>
+            <p>大東建託の特例子会社である大東コーポレートサービスの障がい者雇用のノウハウを共有し、専門スタッフによる雇用の促進、定着のための様々な取り組みを行っています。<br>・採用面接時のフォロー(体調面の確認) <br>・受け入れ側社員へのアドバイス(体調別の対処方法など) <br>・入社後の体調変化に関する相談受付 <br>・障がい者雇用に関する研修実施</p>
+          </div>
+          <img src="<?php echo IMAGE_URL;  ?>inclusion/item-3.jpg" alt="">
+        </li>
+      </ul>
+      <div class="l-inclusion__notice">
+        <p>※大東コーポレートサービスは、障がい者雇用を目的に、大東建託株式会社の特例子会社として、2005年に設立され ました。障がいのある人もない人も、一緒になって働くことの楽しさと喜びを共有し、一人ひとりが多様な個性と能力を活か せるよう、様々な働きやすい職場環境作りを推進しています。2018年には、「障がい者を多数雇用し活躍している企業で あること」、「障がい特性に配慮した雇用管理、および雇用形態の見直しなどが実施されていること」が評価され、厚生労 働省より「障害者活躍企業」として認証されました。</p>
+        <p>大東コーポレートサービス公式サイト https://www.daito-copo.com/news/</p>
+        <img src="<?php echo IMAGE_URL;  ?>inclusion/notice-1.png" alt="">
+        <img src="<?php echo IMAGE_URL;  ?>inclusion/notice-2.png" alt="">
+      </div>
+    </div>
+  </div>
+
   <!-- bocha -->
   <div class="bocha">
     <div class="bocha-inner">

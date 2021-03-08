@@ -1134,7 +1134,7 @@ img
 
 .drawer .drawer-inner .nav .menuArea-item_interview .menuArea-tit_en img
 {
-    width: 127.06px;
+    width: 124.05px;
     height: auto;
 }
 
@@ -3239,7 +3239,7 @@ a:active
     }
 }
 
-/*#wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_en img
+#wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_en img
 {
     width: 27.88047vw;
     height: 5.16484vw;
@@ -3249,23 +3249,8 @@ a:active
 {
     #wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_en img
     {
-        width: 14.111rem;
-        height: 3.494rem;
-    }
-}*/
-
-#wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_en img
-{
-    width: 24.88047vw;
-    height: 5vw;
-}
-
-@media (max-width: 750px)
-{
-    #wrapper.id_top .main-inner .mainItem_interview .mainItem-tit_en img
-    {
-        width: 12.511rem;
-        height: 2.794rem;
+        width: 14.5rem;
+        height: auto;
     }
 }
 
