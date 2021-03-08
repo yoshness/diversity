@@ -6,6 +6,12 @@
     .l-cover-bg {
       width: 80%;
       margin-left: auto;
+
+      @include max-screen($breakpoint-mobile) {
+        width: 85%;
+        height: 305px;
+        padding-top: 0;
+      }
     }
   }
 }
