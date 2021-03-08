@@ -13,6 +13,12 @@
 .l-cover-bg {
   position: relative;
   padding-top: calc(525 / 1280 * 100%);
+  background-image: url(#{$path-image}/interview/cover.png);
+
+  @include max-screen($breakpoint-mobile) {
+    padding-top: calc(400 / 375 * 100%);
+    background-image: url(#{$path-image}/interview/cover-sp.png);
+  }
 }
 
 .l-cover__title {
@@ -29,6 +35,11 @@
   margin-bottom: 1.95312vw;
   padding-bottom: 3.51562vw;
 
+  @include max-screen($breakpoint-mobile) {
+    margin-bottom: 3.67rem;
+    padding-bottom: 3.9rem;
+  }
+
   &:before {
     display: inline-block;
     width: 200px;
@@ -43,7 +54,12 @@
 
   img {
     width: 31.10078vw;
-    height: 5.1875vw;
+    height: 6.5vw;
+
+    @include max-screen($breakpoint-mobile) {
+      width: 15.069rem;
+      height: auto;
+    }
   }
 }
 

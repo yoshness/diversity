@@ -126,7 +126,7 @@ get_header();
   <a class="mainItem mainItem_interview" href="interview">
     <h2 class="mainItem-tit">
       <span class="mainItem-tit_en">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/letter_main06.svg" alt="Interview">
+        <img src="<?php echo IMAGE_URL ?>interview/title.png" alt="Interview">
       </span>
       <span class="mainItem-tit_ja">社員インタビュー</span>
     </h2>
@@ -159,6 +159,30 @@ get_header();
       <div class="card-inner" id="card-inner">
         <!-- card-list -->
         <ul class="card-list" id="card-list">
+
+          <li class="card-item">
+            <a class="card-link" href="/corporate/pr/info/2020/aqehc4000000e51q-att/worklifebalance_0213.pdf" target="_blank" rel="noopener noreferrer">
+              <p class="card-txt onlyPC">2019.4.23</p>
+              <div class="card-img">
+                <img 
+                  src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/sp/pic_topic01@2x.jpg"
+                  alt="全ての従業員の活躍を目指すプロジェクト「いろどりLAB」の始動"
+                  class="upto1200"
+                >
+                <img 
+                  src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic01.jpg"
+                  srcset="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic01.jpg 1x, 
+                          <?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic01@2x.jpg 2x"
+                  class="from1201"
+                  alt="全ての従業員の活躍を目指すプロジェクト「いろどりLAB」の始動"
+                >
+              </div>
+              <div class="txtArea">
+                <p class="txtArea-txt onlySP">2019.4.23</p>
+                <p class="txtArea-tit">全ての従業員の活躍を目指すプロジェクト「いろどりLAB」の始動</p>
+              </div>
+            </a>
+          </li>
 
           <li class="card-item">
             <a class="card-link" href="/corporate/pr/info/2020/aqehc4000000e51q-att/worklifebalance_0213.pdf" target="_blank" rel="noopener noreferrer">

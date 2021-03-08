@@ -83,6 +83,12 @@ html.is-locked, body.is-locked {
      object-fit: cover;
 }
 
+@media screen and (max-width: 767px) {
+  .interview-block__image img {
+    height: 120px;
+  }
+}
+
 .interview-block__tagline {
   margin: 15px 0;
   font-size: 1.75rem;
@@ -91,16 +97,27 @@ html.is-locked, body.is-locked {
   letter-spacing: .18em;
 }
 
-.interview-block__company {
-  font-size: 12px;
+@media screen and (max-width: 767px) {
+  .interview-block__tagline {
+    font-size: 1.4rem;
+  }
+  .interview-block__tagline br {
+    display: none;
+  }
 }
 
-.interview-block__department {
-  font-size: 12px;
-}
-
+.interview-block__company,
+.interview-block__department,
 .interview-block__position {
   font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .interview-block__company,
+  .interview-block__department,
+  .interview-block__position {
+    font-size: 11px;
+  }
 }
 
 .interview-block__name {
@@ -113,6 +130,13 @@ html.is-locked, body.is-locked {
   font-weight: 500;
   letter-spacing: .18em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .interview-block__name-ja,
+  .interview-block__name-en {
+    font-size: 1.5rem;
+  }
 }
 
 .interview-block__name-ja:after {
@@ -139,7 +163,7 @@ html.is-locked, body.is-locked {
 @media screen and (max-width: 767px) {
   .l-container {
     width: 100%;
-    padding: 0 25px;
+    padding: 0 2rem;
   }
 }
 
@@ -156,6 +180,14 @@ html.is-locked, body.is-locked {
 .l-cover-bg {
   position: relative;
   padding-top: calc(525 / 1280 * 100%);
+  background-image: url(/diversity/wp-content/themes/diversity/assets/images-new/interview/cover.png);
+}
+
+@media screen and (max-width: 767px) {
+  .l-cover-bg {
+    padding-top: calc(400 / 375 * 100%);
+    background-image: url(/diversity/wp-content/themes/diversity/assets/images-new/interview/cover-sp.png);
+  }
 }
 
 .l-cover__title {
@@ -173,6 +205,13 @@ html.is-locked, body.is-locked {
   padding-bottom: 3.51562vw;
 }
 
+@media screen and (max-width: 767px) {
+  .l-cover__title-en {
+    margin-bottom: 3.67rem;
+    padding-bottom: 3.9rem;
+  }
+}
+
 .l-cover__title-en:before {
   display: inline-block;
   width: 200px;
@@ -187,7 +226,14 @@ html.is-locked, body.is-locked {
 
 .l-cover__title-en img {
   width: 31.10078vw;
-  height: 5.1875vw;
+  height: 6.5vw;
+}
+
+@media screen and (max-width: 767px) {
+  .l-cover__title-en img {
+    width: 15.069rem;
+    height: auto;
+  }
 }
 
 .l-cover__title-ja {
@@ -198,7 +244,13 @@ html.is-locked, body.is-locked {
 
 .l-interview__eyecatch {
   position: relative;
-  padding: 400px 0 200px;
+  padding: 300px 0 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__eyecatch {
+    padding: 60px 0;
+  }
 }
 
 .l-interview__eyecatch:before {
@@ -206,50 +258,86 @@ html.is-locked, body.is-locked {
   width: 1200px;
   height: 572px;
   position: absolute;
-  top: 250px;
+  top: 200px;
   left: 0;
   content: '';
   background-color: #f7f7f7;
 }
 
-.l-interview__eyecatch-left {
-  width: 600px;
-  position: relative;
-  z-index: 2;
-  top: 0;
-  left: 0;
+@media screen and (max-width: 767px) {
+  .l-interview__eyecatch:before {
+    width: 80%;
+    height: 625px;
+    top: 85px;
+    right: 0;
+    left: auto;
+  }
 }
 
-.l-interview__eyecatch-left span {
+.l-interview__eyecatch span {
   display: inline-block;
   margin-bottom: 5rem;
   padding-bottom: 1.35rem;
   font-size: 2rem;
   font-weight: 500;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
   letter-spacing: .25em;
   border-bottom: 2px solid #0044af;
 }
 
-.l-interview__eyecatch-left h2 {
+@media screen and (max-width: 767px) {
+  .l-interview__eyecatch span {
+    width: 100%;
+    font-size: 1.7rem;
+  }
+}
+
+.l-interview__eyecatch h2 {
+  width: 600px;
   margin-bottom: 40px;
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: .25em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
-.l-interview__eyecatch-left p {
+@media screen and (max-width: 767px) {
+  .l-interview__eyecatch h2 {
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 2.4rem;
+  }
+}
+
+.l-interview__eyecatch p {
+  width: 600px;
   padding-right: 150px;
   line-height: 2;
 }
 
-.l-interview__eyecatch-right {
+@media screen and (max-width: 767px) {
+  .l-interview__eyecatch p {
+    width: 100%;
+    margin-top: 70px;
+    padding-right: 0;
+  }
+}
+
+.l-interview__eyecatch-image {
   position: absolute;
-  top: -200px;
+  top: -160px;
   right: 0;
 }
 
-.l-interview__eyecatch-right:before {
+@media screen and (max-width: 767px) {
+  .l-interview__eyecatch-image {
+    position: relative;
+    top: 0;
+  }
+}
+
+.l-interview__eyecatch-image:before {
   display: block;
   width: 304px;
   height: 368px;
@@ -260,12 +348,30 @@ html.is-locked, body.is-locked {
   background-color: #164184;
 }
 
-.l-interview__eyecatch-right img {
+@media screen and (max-width: 767px) {
+  .l-interview__eyecatch-image:before {
+    width: 90%;
+    height: 61vw;
+    min-height: 224px;
+    top: 25px;
+    right: auto;
+    left: -25px;
+  }
+}
+
+.l-interview__eyecatch-image img {
   width: calc(725px * .7);
   height: calc(542px * .7);
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__eyecatch-image img {
+    width: 90%;
+    height: auto;
+  }
 }
 
 .l-interview__content {
@@ -281,15 +387,37 @@ html.is-locked, body.is-locked {
   letter-spacing: .25em;
 }
 
+@media screen and (max-width: 767px) {
+  .l-interview__content h2 {
+    margin-bottom: 40px;
+    font-size: 2.4rem;
+  }
+}
+
 .l-interview__categories {
   -ms-flex-pack: space-evenly;
       justify-content: space-evenly;
   margin-bottom: 70px;
 }
 
+@media screen and (max-width: 767px) {
+  .l-interview__categories {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+
 .l-interview__categories li {
   width: 23%;
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__categories li {
+    width: 48%;
+    margin-bottom: 15px;
+  }
 }
 
 .l-interview__categories li a {
@@ -298,11 +426,30 @@ html.is-locked, body.is-locked {
   width: 100%;
   height: 60px;
   border: 1px solid #000;
+  transition: all 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__categories li a {
+    height: 52px;
+  }
+}
+
+.l-interview__categories li a:hover, .l-interview__categories li a.active {
+  color: #fff;
+  background-color: #164184;
 }
 
 .l-interview__items li {
   width: 32%;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__items li {
+    width: 48%;
+    margin-bottom: 25px;
+  }
 }
 
 .l-single__eyecatch {
