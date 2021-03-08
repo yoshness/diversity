@@ -5,6 +5,8 @@
     <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/common/logo_footer.svg" alt="大東建託" width="142.44" height="37.92"> -->
       ダイバーシティ＆インクルージョンTOPへ
     </a>
+    <br>
+    <a href="https://saiyo.kentaku.co.jp/" class="hover_op02" target="_blank">採用サイトTOPへ</a>
   </div>
 
   <p class="footer-copy"><small>Copyright &copy; Daito Trust Construction Co.,Ltd.<br class="onlySP"> All Rights Reserved.</small></p>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="134" height="48" viewBox="0 0 134 48">
+  <g id="Group_51" data-name="Group 51" transform="translate(-26 -303)">
+    <g id="Group_51-2" data-name="Group 51" transform="translate(26 311)">
+      <rect id="Rectangle_39" data-name="Rectangle 39" width="7" height="7" transform="translate(7 7)" fill="#a21b44"/>
+      <rect id="Rectangle_40" data-name="Rectangle 40" width="7" height="7" fill="#f1b024"/>
+      <rect id="Rectangle_41" data-name="Rectangle 41" width="7" height="8" transform="translate(0 26)" fill="#e76e2b"/>
+      <rect id="Rectangle_42" data-name="Rectangle 42" width="7" height="6" transform="translate(7 20)" fill="#47763f"/>
+      <rect id="Rectangle_43" data-name="Rectangle 43" width="6" height="6" transform="translate(20 20)" fill="#1978b2"/>
+      <rect id="Rectangle_44" data-name="Rectangle 44" width="8" height="8" transform="translate(26 26)" fill="#f1b024"/>
+      <rect id="Rectangle_45" data-name="Rectangle 45" width="7" height="8" transform="translate(14 26)" fill="#a21b44"/>
+      <rect id="Rectangle_46" data-name="Rectangle 46" width="7" height="7" transform="translate(0 14)" fill="#1978b2"/>
+    </g>
+    <text id="LOVE" transform="translate(69 325)" fill="#121212" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.144em"><tspan x="0" y="0">LOVE</tspan></text>
+    <text id="COLORS" transform="translate(69 346)" fill="#121212" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.144em"><tspan x="0" y="0">COLORS</tspan></text>
+  </g>
+</svg>

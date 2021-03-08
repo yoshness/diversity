@@ -634,6 +634,10 @@ img
     padding: 7.3rem 2rem 8.7rem 2rem;
 }
 
+.footer-link a:last-child {
+    margin-top: 20px;
+}
+
 @media (min-width: 360px) and (max-width: 750px)
 {
     .footer
@@ -849,6 +853,10 @@ img
     padding: 19px 28.3px;
 }
 
+.header-link:last-child {
+    margin-left: 7px;
+}
+
 @media (max-width: 1180px)
 {
     .header-inner
@@ -1027,6 +1035,7 @@ img
     height: calc(70 / 600 * 100%);
 
     background-color: #fff;
+    display: flex;
 }
 
 .drawer .drawer-inner .nav .logoArea .logoArea-link
@@ -1042,6 +1051,12 @@ img
     -webkit-align-items: center;
     -ms-flex-align: center;
             align-items: center;
+}
+
+.drawer .drawer-inner .nav .logoArea .logoArea-link:last-child
+{
+    margin-left: 7px;
+    padding-left: 0;
 }
 
 @media (max-width: 1180px)

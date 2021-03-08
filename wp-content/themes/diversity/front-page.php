@@ -185,30 +185,6 @@ get_header();
           </li>
 
           <li class="card-item">
-            <a class="card-link" href="/corporate/pr/info/2020/aqehc4000000e51q-att/worklifebalance_0213.pdf" target="_blank" rel="noopener noreferrer">
-              <p class="card-txt onlyPC">2019.4.23</p>
-              <div class="card-img">
-                <img 
-                  src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/sp/pic_topic01@2x.jpg"
-                  alt="全ての従業員の活躍を目指すプロジェクト「いろどりLAB」の始動"
-                  class="upto1200"
-                >
-                <img 
-                  src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic01.jpg"
-                  srcset="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic01.jpg 1x, 
-                          <?php echo get_template_directory_uri(); ?>/assets/resource/img/top/pic_topic01@2x.jpg 2x"
-                  class="from1201"
-                  alt="全ての従業員の活躍を目指すプロジェクト「いろどりLAB」の始動"
-                >
-              </div>
-              <div class="txtArea">
-                <p class="txtArea-txt onlySP">2019.4.23</p>
-                <p class="txtArea-tit">全ての従業員の活躍を目指すプロジェクト「いろどりLAB」の始動</p>
-              </div>
-            </a>
-          </li>
-
-          <li class="card-item">
             <a class="card-link" href="/diversity/work-life-balance/#childcare">
               <p class="card-txt onlyPC">2020.4.1</p>
               <div class="card-img">
@@ -258,50 +234,6 @@ get_header();
         </ul><!-- /card-list -->
       </div>
     </div><!-- /card -->
-  </div>
-</div>
-  <!-- ************************************************************
-//  bnrLink
-// ************************************************************ -->
-<div class="bnrLink">
-  <div class="bnrLink-inner">
-    <h2 class="bnrLink-tit">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/letter_bnrLink01.svg" alt="Banner&Link">
-    </h2>
-    <div class="bnrs">
-      <ul class="bnrs-list">
-        <li class="bnrs-item">
-          <a class="bnrs-link hover_op02" href="/" target="_blank" rel="noopener noreferrer">
-          <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr01.jpg" alt="大東建託（バナー）"> -->
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr01@2x.jpg" alt="大東建託（バナー）">
-          </a>
-        </li>
-        <li class="bnrs-item">
-          <a class="bnrs-link hover_op02" href="/miraiken/" target="_blank" rel="noopener noreferrer">
-          <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr02.png" alt="賃貸未来研究所（バナー）"> -->
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr02@2x.jpg" alt="賃貸未来研究所（バナー）">
-          </a>
-        </li>
-        <li class="bnrs-item">
-          <a class="bnrs-link hover_op02" href="http://ikumama-kentaku.com/" target="_blank" rel="noopener noreferrer">
-          <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr03.jpg" alt="大東建託で働くママ達のリレーブログ 育ママ奮闘記（バナー）"> -->
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr03@2x.jpg" alt="大東建託で働くママ達のリレーブログ 育ママ奮闘記（バナー）">
-          </a>
-        </li>
-        <li class="bnrs-item">
-          <a class="bnrs-link hover_op02" href="https://team-daito.com/" target="_blank" rel="noopener noreferrer">
-          <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr04.jpg" alt="TEAM DAITO ATHELETE SUPPORT FUTURE PROJECTS（バナー）"> -->
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr04@2x.jpg" alt="TEAM DAITO ATHELETE SUPPORT FUTURE PROJECTS（バナー）">
-          <!-- <img 
-            src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr04.jpg"
-            srcset="<?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr04.jpg 1x, 
-                    <?php echo get_template_directory_uri(); ?>/assets/resource/img/top/bnr04@2x.jpg 2x"
-            alt="TEAM DAITO ATHELETE SUPPORT FUTURE PROJECTS（バナー）"
-          > -->
-          </a>
-        </li>
-      </ul>
-    </div>
   </div>
 </div>
 
