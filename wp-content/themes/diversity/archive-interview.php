@@ -75,6 +75,7 @@ get_header();
 				</li>
 				<?php endwhile; wp_reset_postdata(); ?>
 			</ul>
+			<p class="l-interview__note">※所属・役職は2021年2月時点</p>
 		</div>
 	</section>
 	<?php } ?>

@@ -382,9 +382,16 @@ html.is-locked, body.is-locked {
 }
 
 .l-interview__content {
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   text-align: center;
   background: linear-gradient(to bottom, #fff 50%, #f7f7f7 0);
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__content {
+    padding-bottom: 90px;
+    background: linear-gradient(to top, #f7f7f7 170px, #fff 0);
+  }
 }
 
 .l-interview__content h2 {
@@ -459,6 +466,18 @@ html.is-locked, body.is-locked {
   }
 }
 
+.l-interview__note {
+  margin-top: 50px;
+  font-size: 12px;
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__note {
+    margin-top: 70px;
+  }
+}
+
 .l-single__eyecatch {
   -ms-flex-pack: start;
       justify-content: flex-start;
@@ -476,7 +495,7 @@ html.is-locked, body.is-locked {
   width: 60%;
   position: relative;
   margin-top: -150px;
-  padding: 80px 10% 50px 15%;
+  padding: 80px 10% 50px 12%;
   background-color: #fff;
 }
 
@@ -493,12 +512,19 @@ html.is-locked, body.is-locked {
   margin-bottom: 40px;
   font-size: 3.3rem;
   font-weight: normal;
-  letter-spacing: .25em;
+  letter-spacing: .18em;
+  font-feature-settings: 'palt';
 }
 
 @media screen and (max-width: 767px) {
   .l-single__eyecatch-tagline {
     font-size: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .l-single__eyecatch-tagline br {
+    display: none;
   }
 }
 
@@ -550,8 +576,8 @@ html.is-locked, body.is-locked {
 .l-single__title-ja {
   display: block;
   margin-bottom: 10px;
+  font-family: 'Hiragino Kaku Gothic ProN';
   font-size: 3.2rem;
-  font-weight: normal;
   letter-spacing: .25em;
 }
 
@@ -626,6 +652,10 @@ html.is-locked, body.is-locked {
   }
 }
 
+.l-single__eyecatch-note a {
+  color: #ebff00;
+}
+
 .l-single__block {
   margin-bottom: 180px;
   text-align: left;
@@ -674,7 +704,7 @@ html.is-locked, body.is-locked {
 
 .l-single__block.l-single__block--alternate .l-single__block-content {
   padding-right: 0;
-  padding-left: 15%;
+  padding-left: 12%;
 }
 
 @media screen and (max-width: 767px) {
@@ -733,7 +763,7 @@ html.is-locked, body.is-locked {
 
 .l-single__block-content {
   width: 48.5%;
-  padding-right: 15%;
+  padding-right: 12%;
 }
 
 @media screen and (max-width: 767px) {
@@ -748,6 +778,7 @@ html.is-locked, body.is-locked {
   font-size: 2.8rem;
   font-weight: normal;
   line-height: 2;
+  font-feature-settings: 'palt';
 }
 
 @media screen and (max-width: 767px) {
@@ -755,6 +786,12 @@ html.is-locked, body.is-locked {
     margin: 40px 2rem 20px;
     font-size: 2.1rem;
     letter-spacing: -.01em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .l-single__block-content h3 br {
+    display: none;
   }
 }
 
@@ -771,18 +808,13 @@ html.is-locked, body.is-locked {
 
 .l-single__related {
   padding-bottom: 150px;
-  background: linear-gradient(to bottom, #fff 30%, #f7f7f7 0);
-}
-
-@media screen and (max-width: 767px) {
-  .l-single__related {
-    background: linear-gradient(to bottom, #fff 45%, #f7f7f7 0);
-  }
+  background: linear-gradient(to bottom, #fff 28%, #f7f7f7 0);
 }
 
 @media screen and (max-width: 767px) {
   .l-single__related {
     padding-bottom: 100px;
+    background: linear-gradient(to bottom, #fff 32%, #f7f7f7 0);
   }
 }
 
@@ -796,6 +828,22 @@ html.is-locked, body.is-locked {
 @media screen and (max-width: 767px) {
   .l-single__related h2 {
     font-size: 2.8rem;
+  }
+}
+
+.l-single__related .l-interview__items .interview-block .interview-block__tagline {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .l-single__related .l-interview__items .interview-block .interview-block__tagline {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .l-single__related .l-interview__items li:nth-child(3) {
+    display: none;
   }
 }
 

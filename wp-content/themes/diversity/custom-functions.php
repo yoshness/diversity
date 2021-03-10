@@ -111,3 +111,7 @@ $interview_args = array(
     'menu_position' => 9,
 );
 register_post_type( 'featured', $interview_args );
+
+function sort_terms_by_id($a, $b) {
+    return $a->term_id > $b->term_id;
+}

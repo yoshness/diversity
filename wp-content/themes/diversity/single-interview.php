@@ -25,13 +25,16 @@ get_header();
 			<p class="l-single__eyecatch-department"><?php the_field('department'); ?></p>
 			<p class="l-single__eyecatch-position"><?php the_field('position'); ?></p>
 			<h2>＜ 利用制度 ＞</h2>
-			<?php $tags = get_the_terms( get_the_ID(), 'interview_tag' ); ?>
+			<?php 
+				$tags = get_the_terms( get_the_ID(), 'interview_tag'); 
+				usort($tags, 'sort_terms_by_id');
+				?>
 			<ul class="l-single__eyecatch-tags u-flex">
 				<?php foreach($tags as $tag) { ?>
 				<li><?php echo $tag->name; ?></li>
 				<?php } ?>
 			</ul>
-			<p class="l-single__eyecatch-note">※ライフイベントに合わせた福利厚生制度はこちら</p>
+			<p class="l-single__eyecatch-note">※ライフイベントに合わせた福利厚生制度は<a href="<?php echo HOME_URL; ?>work-life-balance/#life-event-welfare">こちら</a></p>
 		</div>
 	</div>
 	<div class="l-single__block u-flex">
@@ -60,7 +63,7 @@ get_header();
 	<?php
       	$article_args = array(
 			'post_type'      => 'interview',
-	    	'posts_per_page' => -1,
+	    	'posts_per_page' => 3,
 	    	'order'          => 'DESC',
 	    	'post_status'    => 'publish',
 	    	'post__not_in' => array(get_the_ID()) // exclude self
