@@ -25,6 +25,7 @@
 
 .l-single__eyecatch-tagline {
   margin-bottom: 40px;
+  font-family: ヒラギノ明朝 Pro W6,YuMincho,游明朝,'Noto Serif JP',Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;
   font-size: 3.3rem;
   font-weight: normal;
   letter-spacing: .18em;
@@ -50,6 +51,12 @@
   @include max-screen($breakpoint-mobile) {
     width: 80%;
     padding-left: 15px;
+  }
+
+  br {
+    @include max-screen($breakpoint-mobile) {
+      display: none;
+    }
   }
 }
 
@@ -80,12 +87,18 @@
   }
 }
 
-.l-single__title-ja {
+.l-single__title-ja,
+.l-single__title-en {
   display: block;
   margin-bottom: 10px;
-  font-family: 'Hiragino Kaku Gothic ProN';
-  font-size: 3.2rem;
+  font-family: ヒラギノ明朝 Pro W6,YuMincho,游明朝,'Noto Serif JP',Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;
   letter-spacing: .25em;
+}
+
+.l-single__title-ja {
+  display: block;
+  font-family: ヒラギノ明朝 Pro W6,YuMincho,游明朝,'Noto Serif JP',Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;
+  font-size: 3.4rem;
 
   @include max-screen($breakpoint-mobile) {
     font-size: 2.7rem;
@@ -93,10 +106,7 @@
 }
 
 .l-single__title-en {
-  display: block;
-  margin-bottom: 10px;
   font-weight: normal;
-  letter-spacing: .25em;
   text-transform: uppercase;
 
   @include max-screen($breakpoint-mobile) {
@@ -247,7 +257,8 @@
 
   h3 {
     margin: 100px 0 50px;
-    font-size: 2.8rem;
+    font-family: ヒラギノ明朝 Pro W3,YuMincho,游明朝,'Noto Serif JP',Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;
+    font-size: 3rem;
     font-weight: normal;
     line-height: 2;
 

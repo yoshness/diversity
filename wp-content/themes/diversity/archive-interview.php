@@ -65,8 +65,8 @@ get_header();
 						</div>
 						<p class="interview-block__tagline"><?php the_field('tagline'); ?></p>
 						<p class="interview-block__company"><?php the_field('company'); ?></p>
-						<p class="interview-block__department"><?php the_field('department'); ?></p>
-						<p class="interview-block__position"><?php the_field('position'); ?></p>
+						<span class="interview-block__department"><?php the_field('department'); ?></span>
+						<span class="interview-block__position"><?php the_field('position'); ?></span>
 						<h3 class="interview-block__name">
 							<span class="interview-block__name-ja"><?php the_title(); ?></span>
 							<span class="interview-block__name-en"><?php the_field('en_name'); ?></span>

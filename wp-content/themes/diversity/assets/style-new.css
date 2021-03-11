@@ -439,6 +439,7 @@ html.is-locked, body.is-locked {
       justify-content: center;
   width: 100%;
   height: 60px;
+  padding: 0 62px;
   border: 1px solid #000;
   transition: all 0.25s ease-in-out;
 }
@@ -446,12 +447,23 @@ html.is-locked, body.is-locked {
 @media screen and (max-width: 767px) {
   .l-interview__categories li a {
     height: 52px;
+    padding: 0 30px;
   }
 }
 
 .l-interview__categories li a:hover, .l-interview__categories li a.active {
   color: #fff;
   background-color: #164184;
+}
+
+.l-interview__categories li:nth-child(4) a {
+  padding: 0 55px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__categories li:nth-child(4) a {
+    padding: 0 25px;
+  }
 }
 
 .l-interview__items li {
@@ -510,6 +522,7 @@ html.is-locked, body.is-locked {
 
 .l-single__eyecatch-tagline {
   margin-bottom: 40px;
+  font-family: ヒラギノ明朝 Pro W6,YuMincho,游明朝,'Noto Serif JP',Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;
   font-size: 3.3rem;
   font-weight: normal;
   letter-spacing: .18em;
@@ -539,6 +552,12 @@ html.is-locked, body.is-locked {
   .l-single__eyecatch-history {
     width: 80%;
     padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .l-single__eyecatch-history br {
+    display: none;
   }
 }
 
@@ -573,12 +592,18 @@ html.is-locked, body.is-locked {
   }
 }
 
-.l-single__title-ja {
+.l-single__title-ja,
+.l-single__title-en {
   display: block;
   margin-bottom: 10px;
-  font-family: 'Hiragino Kaku Gothic ProN';
-  font-size: 3.2rem;
+  font-family: ヒラギノ明朝 Pro W6,YuMincho,游明朝,'Noto Serif JP',Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;
   letter-spacing: .25em;
+}
+
+.l-single__title-ja {
+  display: block;
+  font-family: ヒラギノ明朝 Pro W6,YuMincho,游明朝,'Noto Serif JP',Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;
+  font-size: 3.4rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -588,10 +613,7 @@ html.is-locked, body.is-locked {
 }
 
 .l-single__title-en {
-  display: block;
-  margin-bottom: 10px;
   font-weight: normal;
-  letter-spacing: .25em;
   text-transform: uppercase;
 }
 
@@ -775,7 +797,8 @@ html.is-locked, body.is-locked {
 
 .l-single__block-content h3 {
   margin: 100px 0 50px;
-  font-size: 2.8rem;
+  font-family: ヒラギノ明朝 Pro W3,YuMincho,游明朝,'Noto Serif JP',Times New Roman,Hiragino Mincho ProN,HGS明朝B,ＭＳ Ｐ明朝,serif,Meiryo,Sawarabi Mincho,メイリオ,ＭＳ Ｐゴシック,sans-serif;
+  font-size: 3rem;
   font-weight: normal;
   line-height: 2;
   font-feature-settings: 'palt';
