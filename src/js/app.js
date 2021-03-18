@@ -1,3 +1,7 @@
-import browserHack from './modules/browser-hack';
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
 
-browserHack();
+import initSliders from './modules/init-sliders';
+
+initSliders();

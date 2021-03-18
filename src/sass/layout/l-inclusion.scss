@@ -9,6 +9,7 @@
     letter-spacing: .25em;
     border-bottom: 2px solid #f1b024;
 
+    font-feature-settings: 'palt';
     @include max-screen($breakpoint-mobile) {
       margin-bottom: 5.5rem;
       font-size: 2.5rem;

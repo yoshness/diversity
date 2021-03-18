@@ -46,6 +46,9 @@ get_header();
 				]);
 			?>
 			<ul class="l-interview__categories u-flex">
+				<li>
+					<a href="<?php echo HOME_URL; ?>interview#interview-list" class="u-flex u-flex--center">全て</a>
+				</li>
 				<?php foreach($categories as $cat) { ?>
 				<li>
 					<a href="<?php echo get_category_link( $cat->term_id ) ?>#interview-list" class="u-flex u-flex--center"><?php echo $cat->name; ?></a>

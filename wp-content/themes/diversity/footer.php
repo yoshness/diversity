@@ -27,8 +27,8 @@
 	  	<script src='<?php echo get_template_directory_uri(); ?>/assets/js/page.js'></script>
 
 	  	<?php if(is_front_page()) { ?>
-	  		<script src='<?php echo get_template_directory_uri(); ?>/assets/js/top.js'></script>
-		<?php } ?>
+	  	<script src='<?php echo get_template_directory_uri(); ?>/assets/js/top.js'></script>
+	  	<?php } ?>
 		<?php if(is_page('Work Life Balance')) { ?>
 	  		<script src='<?php echo get_template_directory_uri(); ?>/assets/js/work-life-balance.js'></script>
 		<?php } ?>

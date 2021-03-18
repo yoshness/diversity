@@ -63,7 +63,7 @@ get_header();
 	<?php
       	$article_args = array(
 			'post_type'      => 'interview',
-	    	'posts_per_page' => 3,
+	    	'posts_per_page' => -1,
 	    	'order'          => 'DESC',
 	    	'post_status'    => 'publish',
 	    	'post__not_in' => array(get_the_ID()) // exclude self
@@ -74,7 +74,7 @@ get_header();
 	<section class="l-single__related">
 		<div class="l-container">
 			<h2><a href="<?php echo HOME_URL; ?>interview#interview-list">インタビュー一覧</a></h2>
-			<ul class="l-interview__items u-flex">
+			<ul class="l-interview__items u-flex" id="js-related-slider">
 				<?php 
 					while ($articles->have_posts()): $articles->the_post(); 
 						$featured_image = get_field('cover');
@@ -96,6 +96,10 @@ get_header();
 				</li>
 				<?php endwhile; wp_reset_postdata(); ?>
 			</ul>
+			<div class="l-single__related-arrows u-flex">
+				<div class="l-single__related-arrow l-single__related-arrow--prev js-slider-prev"></div>
+				<div class="l-single__related-arrow l-single__related-arrow--next js-slider-next"></div>
+			</div>
 		</div>
 	</section>
 	<?php } ?>
