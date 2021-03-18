@@ -39,21 +39,21 @@ get_header();
       障がい者の活躍促進
     </h2>
     <p class="activePromotion-txt">
-      当社グループでは、全社で障がい者の就労機会拡大に努めています。2005年5月、障がい者雇用を目的に特例子会社として大東コーポレートサービス（株）を設立しました。障がいのある人も無い人も、一緒になって働くことの楽しさ、喜びを共有できる職場づくりを行っています。
+      当社グループでは、全社で障がい者の就労機会拡大に努めています。2005年5月、障がい者雇用を目的に特例子会社として大東コーポレートサービス（株）を設立しました。障がいのある社員一人ひとりの個性や能力を活かし、誰もが安心して⻑く働ける職場環境 づくりを推進しています。グループ全体の障がい者雇用率は2.98%(2019年度)、500 名以上の障がいのある社員が全国の拠点、グループ各社で活躍しています。 
     </p>
 
     <!-- imgList -->
     <div class="imgList">
       <div class="imgList-item">
         <img 
-          src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/inclusion/pic_active01.svg"
+          src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/inclusion/pic_active01.png"
           alt="2023年雇用率目標グループ全体3.1% ※法定雇用率2.2%"
-          class="from751"
+          class="from751" width="380" height="180"
         >
         <img 
-          src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/inclusion/sp/pic_active01.svg"
+          src="<?php echo get_template_directory_uri(); ?>/assets/resource/img/inclusion/sp/pic_active01.png"
           alt="2023年雇用率目標グループ全体3.1% ※法定雇用率2.2%"
-          class="upto751"
+          class="upto751" width="100%"
         >
       </div>
       <div class="imgList-item">
@@ -89,7 +89,7 @@ get_header();
 
   <div class="l-inclusion__content">
     <div class="l-container">
-      <h3>大東建託の障がい者雇用</h3>
+      <h3>大東建託の障が<span>い者雇用</span></h3>
       <ul class="l-inclusion__list">
         <li class="l-inclusion__item u-flex">
           <div class="l-inclusion__item-left">

@@ -163,7 +163,7 @@ get_header();
             'post_type'      => 'featured',
             'posts_per_page' => -1,
             'order'          => 'ASC',
-            'post_status'    => 'publish'
+            'post_status'    => 'any'
         );
         $articles = new WP_Query($article_args);
         if ($articles->have_posts()) {

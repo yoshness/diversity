@@ -1,9 +1,9 @@
 .l-interview__eyecatch {
   position: relative;
-  padding: 300px 0 200px;
+  padding: 300px 0 100px;
 
   @include max-screen($breakpoint-mobile) {
-    padding: 60px 0;
+    padding: 60px 0 0;
   }
 
   &:before {
@@ -27,17 +27,31 @@
 
   span {
     display: inline-block;
+    position: relative;
     margin-bottom: 5rem;
     padding-bottom: 1.35rem;
     font-size: 2rem;
     font-weight: 500;
     line-height: 3.5rem;
     letter-spacing: .25em;
-    border-bottom: 2px solid #0044af;
 
     @include max-screen($breakpoint-mobile) {
-      width: 100%;
+      width: max-content;
       font-size: 1.7rem;
+    }
+
+    &:after {
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      content: '';
+      background-color: #0044af;
+
+      @include max-screen($breakpoint-mobile) {
+        bottom: 0;
+      }
     }
   }
   h2 {
@@ -111,12 +125,12 @@
 }
 
 .l-interview__content {
-  padding-bottom: 100px;
+  padding: 100px 0;
   text-align: center;
   background: linear-gradient(to bottom, #fff 50%, #f7f7f7 0);
 
   @include max-screen($breakpoint-mobile) {
-    padding-bottom: 90px;
+    padding: 70px 0 90px;
     background: linear-gradient(to top, #f7f7f7 170px, #fff 0);
   }
 
@@ -129,6 +143,16 @@
     @include max-screen($breakpoint-mobile) {
       margin-bottom: 40px;
       font-size: 2.4rem;
+    }
+
+    &:hover {
+      a {
+        color: $color-primary;
+      }
+    }
+
+    a {
+      transition: color $duration $easing;
     }
   }
 }
@@ -184,13 +208,31 @@
 }
 
 .l-interview__items {
+  justify-content: flex-start;
+
   li {
     width: 32%;
+    margin-right: 20px;
     margin-bottom: 40px;
 
     @include max-screen($breakpoint-mobile) {
       width: 48%;
       margin-bottom: 25px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(odd) {
+      @include max-screen($breakpoint-mobile) {
+        margin-right: 3.5vw;
+      }
+    }
+    &:nth-child(even) {
+      @include max-screen($breakpoint-mobile) {
+        margin-right: 0;
+      }
     }
   }
 }

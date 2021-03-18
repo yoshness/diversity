@@ -73,7 +73,7 @@ get_header();
     ?>
 	<section class="l-single__related">
 		<div class="l-container">
-			<h2>インタビュー一覧</h2>
+			<h2><a href="<?php echo HOME_URL; ?>interview#interview-list">インタビュー一覧</a></h2>
 			<ul class="l-interview__items u-flex">
 				<?php 
 					while ($articles->have_posts()): $articles->the_post(); 
@@ -82,7 +82,7 @@ get_header();
 				<li class="interview-block">
 					<a href="<?php echo the_permalink(); ?>">
 						<div class="interview-block__image">
-							<img src="<?php echo $featured_image; ?>" alt="">
+							<div class="interview-block__img u-bg-fill" style="background-image: url(<?php echo $featured_image; ?>);"></div>
 						</div>
 						<p class="interview-block__tagline"><?php the_field('tagline'); ?></p>
 						<p class="interview-block__company"><?php the_field('company'); ?></p>

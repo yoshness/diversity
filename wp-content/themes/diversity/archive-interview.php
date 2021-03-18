@@ -19,7 +19,7 @@ get_header();
 	<section class="l-interview__eyecatch">
 		<div class="l-container u-flex">
 			<span>現場の最前線から語る<br>大東建託のダイバーシティ</span>
-			<h2>一人ひとりが個性を活かし、<br class="u-show-pc">やりがいを感じ活躍できる喜び。</h2>
+			<h2>一人ひとりが個性を活かし、<br class="u-show-pc">活躍できる喜び。</h2>
 			<div class="l-interview__eyecatch-image">
 				<img src="<?php echo IMAGE_URL;  ?>interview/eyecatch.jpg" alt="">
 			</div>
@@ -36,9 +36,9 @@ get_header();
 		$articles = new WP_Query($article_args);
 		if ($articles->have_posts()) {
     ?>
-	<section class="l-interview__content">
+	<section class="l-interview__content" id="interview-list">
 		<div class="l-container">
-			<h2>インタビュー一覧</h2>
+			<h2><a href="<?php echo HOME_URL; ?>interview#interview-list">インタビュー一覧</a></h2>
 			<?php 
 				$categories = get_terms([
 				    'taxonomy' => 'interview_category',
@@ -48,7 +48,7 @@ get_header();
 			<ul class="l-interview__categories u-flex">
 				<?php foreach($categories as $cat) { ?>
 				<li>
-					<a href="<?php echo get_category_link( $cat->term_id ) ?>" class="u-flex u-flex--center"><?php echo $cat->name; ?></a>
+					<a href="<?php echo get_category_link( $cat->term_id ) ?>#interview-list" class="u-flex u-flex--center"><?php echo $cat->name; ?></a>
 				</li>
 				<?php } ?>
 			</ul>
@@ -61,7 +61,7 @@ get_header();
 				<li class="interview-block">
 					<a href="<?php echo the_permalink(); ?>">
 						<div class="interview-block__image">
-							<img src="<?php echo $featured_image; ?>" alt="">
+							<div class="interview-block__img u-bg-fill" style="background-image: url(<?php echo $featured_image; ?>);"></div>
 						</div>
 						<p class="interview-block__tagline"><?php the_field('tagline'); ?></p>
 						<p class="interview-block__company"><?php the_field('company'); ?></p>
@@ -75,7 +75,7 @@ get_header();
 				</li>
 				<?php endwhile; wp_reset_postdata(); ?>
 			</ul>
-			<p class="l-interview__note">※所属・役職は2021年2月時点</p>
+			<p class="l-interview__note">※所属・役職は2021年3月時点</p>
 		</div>
 	</section>
 	<?php } ?>

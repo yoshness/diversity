@@ -14,6 +14,12 @@
       font-size: 2.5rem;
       letter-spacing: .2em;
     }
+
+    span {
+      .ie & {
+        margin-left: -15px;
+      }
+    }
   }
 }
 
@@ -31,28 +37,34 @@
     object-fit: contain;
     @include max-screen($breakpoint-mobile) {
       width: 100%;
+      height: 50vw;
       margin-top: 25px;
+
+      object-fit: initial;
     }
   }
 
   &:first-child {
     h4 {
       &:before {
-        content: url(#{$path-resources}/img/diversity-management/num_innovation01.svg);
+        width: 35px;
+        background-image: url(#{$path-image}/inclusion/item-1.png);
       }
     }
   }
   &:nth-child(2) {
     h4 {
       &:before {
-        content: url(#{$path-resources}/img/diversity-management/num_innovation02.svg);
+        width: 38px;
+        background-image: url(#{$path-image}/inclusion/item-2.png);
       }
     }
   }
   &:last-child {
     h4 {
       &:before {
-        content: url(#{$path-resources}/img/diversity-management/num_innovation03.svg);
+        width: 38px;
+        background-image: url(#{$path-image}/inclusion/item-3.png);
       }
     }
   }
@@ -80,11 +92,13 @@
     }
 
     &:before {
+      display: block;
+      height: 24px;
       position: absolute;
       top: 0;
       left: 0;
-
-      filter: sepia(.9) saturate(14) brightness(.66) hue-rotate(-25deg);
+      content: '';
+      background-size: cover;
     }
   }
   p {

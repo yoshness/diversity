@@ -291,6 +291,7 @@ function topics() {
   };
 
   prev.addEventListener('click', function () {
+    prev.classList.add('disabled');
     
     TweenMax.to(cardList, 0.2, {
       ease: Power0.easeNone,
@@ -298,17 +299,25 @@ function topics() {
       x: "+=380px"
     });
     _current--;
-    updateNav();
+
+    setTimeout(() => {
+      updateNav();
+    }, 100);
   });
 
   next.addEventListener('click', function () {
+    next.classList.add('disabled');
+
     TweenMax.to(cardList, 0.2, {
       ease: Power0.easeNone,
       // x: "-= ".concat(moveX)
       x: "-=380px"
     });
     _current++;
-    updateNav();
+
+    setTimeout(() => {
+      updateNav();
+    }, 100);
   });
 
   bottom.addEventListener('click', function () {

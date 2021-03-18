@@ -66,7 +66,7 @@ html.is-locked, body.is-locked {
   text-align: left;
 }
 
-.interview-block:hover .interview-block__image img {
+.interview-block:hover .interview-block__image .interview-block__img {
   transform: scale(1.1);
 }
 
@@ -75,16 +75,14 @@ html.is-locked, body.is-locked {
   width: 100%;
 }
 
-.interview-block__image img {
+.interview-block__image .interview-block__img {
   width: 100%;
   height: 235px;
   transition: transform .45s ease;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
-  .interview-block__image img {
+  .interview-block__image .interview-block__img {
     height: 120px;
   }
 }
@@ -151,6 +149,14 @@ html.is-locked, body.is-locked {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: .1em;
+}
+
+@media screen and (max-width: 767px) {
+  .interview-block__name-en {
+    display: block;
+    top: 0;
+    font-size: 1.2rem;
+  }
 }
 
 .l-container {
@@ -251,12 +257,12 @@ html.is-locked, body.is-locked {
 
 .l-interview__eyecatch {
   position: relative;
-  padding: 300px 0 200px;
+  padding: 300px 0 100px;
 }
 
 @media screen and (max-width: 767px) {
   .l-interview__eyecatch {
-    padding: 60px 0;
+    padding: 60px 0 0;
   }
 }
 
@@ -283,19 +289,37 @@ html.is-locked, body.is-locked {
 
 .l-interview__eyecatch span {
   display: inline-block;
+  position: relative;
   margin-bottom: 5rem;
   padding-bottom: 1.35rem;
   font-size: 2rem;
   font-weight: 500;
   line-height: 3.5rem;
   letter-spacing: .25em;
-  border-bottom: 2px solid #0044af;
 }
 
 @media screen and (max-width: 767px) {
   .l-interview__eyecatch span {
-    width: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     font-size: 1.7rem;
+  }
+}
+
+.l-interview__eyecatch span:after {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  content: '';
+  background-color: #0044af;
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__eyecatch span:after {
+    bottom: 0;
   }
 }
 
@@ -382,14 +406,14 @@ html.is-locked, body.is-locked {
 }
 
 .l-interview__content {
-  padding-bottom: 100px;
+  padding: 100px 0;
   text-align: center;
   background: linear-gradient(to bottom, #fff 50%, #f7f7f7 0);
 }
 
 @media screen and (max-width: 767px) {
   .l-interview__content {
-    padding-bottom: 90px;
+    padding: 70px 0 90px;
     background: linear-gradient(to top, #f7f7f7 170px, #fff 0);
   }
 }
@@ -406,6 +430,14 @@ html.is-locked, body.is-locked {
     margin-bottom: 40px;
     font-size: 2.4rem;
   }
+}
+
+.l-interview__content h2:hover a {
+  color: #164184;
+}
+
+.l-interview__content h2 a {
+  transition: color 0.25s ease-in-out;
 }
 
 .l-interview__categories {
@@ -466,8 +498,14 @@ html.is-locked, body.is-locked {
   }
 }
 
+.l-interview__items {
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+
 .l-interview__items li {
   width: 32%;
+  margin-right: 20px;
   margin-bottom: 40px;
 }
 
@@ -475,6 +513,22 @@ html.is-locked, body.is-locked {
   .l-interview__items li {
     width: 48%;
     margin-bottom: 25px;
+  }
+}
+
+.l-interview__items li:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__items li:nth-child(odd) {
+    margin-right: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .l-interview__items li:nth-child(even) {
+    margin-right: 0;
   }
 }
 
@@ -544,8 +598,7 @@ html.is-locked, body.is-locked {
 .l-single__eyecatch-history {
   padding-left: 25px;
   line-height: 1.8;
-  opacity: .3;
-  border-left: 5px solid rgba(112, 112, 112, 0.5);
+  border-left: 5px solid #151515;
 }
 
 @media screen and (max-width: 767px) {
@@ -670,7 +723,7 @@ html.is-locked, body.is-locked {
 
 @media screen and (max-width: 767px) {
   .l-single__eyecatch-note {
-    font-size: .9rem;
+    font-size: .8rem;
   }
 }
 
@@ -854,6 +907,14 @@ html.is-locked, body.is-locked {
   }
 }
 
+.l-single__related h2:hover a {
+  color: #164184;
+}
+
+.l-single__related h2 a {
+  transition: color 0.25s ease-in-out;
+}
+
 .l-single__related .l-interview__items .interview-block .interview-block__tagline {
   font-size: 1.5rem;
 }
@@ -889,6 +950,10 @@ html.is-locked, body.is-locked {
   }
 }
 
+.ie .l-inclusion__content h3 span {
+  margin-left: -15px;
+}
+
 .l-inclusion__item {
   margin-bottom: 50px;
 }
@@ -909,20 +974,26 @@ html.is-locked, body.is-locked {
 @media screen and (max-width: 767px) {
   .l-inclusion__item img {
     width: 100%;
+    height: 50vw;
     margin-top: 25px;
+    -o-object-fit: initial;
+       object-fit: initial;
   }
 }
 
 .l-inclusion__item:first-child h4:before {
-  content: url(/diversity/wp-content/themes/diversity/assets/resource/img/diversity-management/num_innovation01.svg);
+  width: 35px;
+  background-image: url(/diversity/wp-content/themes/diversity/assets/images-new/inclusion/item-1.png);
 }
 
 .l-inclusion__item:nth-child(2) h4:before {
-  content: url(/diversity/wp-content/themes/diversity/assets/resource/img/diversity-management/num_innovation02.svg);
+  width: 38px;
+  background-image: url(/diversity/wp-content/themes/diversity/assets/images-new/inclusion/item-2.png);
 }
 
 .l-inclusion__item:last-child h4:before {
-  content: url(/diversity/wp-content/themes/diversity/assets/resource/img/diversity-management/num_innovation03.svg);
+  width: 38px;
+  background-image: url(/diversity/wp-content/themes/diversity/assets/images-new/inclusion/item-3.png);
 }
 
 .l-inclusion__item-left {
@@ -953,10 +1024,13 @@ html.is-locked, body.is-locked {
 }
 
 .l-inclusion__item-left h4:before {
+  display: block;
+  height: 24px;
   position: absolute;
   top: 0;
   left: 0;
-  filter: sepia(0.9) saturate(14) brightness(0.66) hue-rotate(-25deg);
+  content: '';
+  background-size: cover;
 }
 
 .l-inclusion__item-left p {

@@ -1,10 +1,12 @@
 const { mix } = require('laravel-mix');
 
-const SRC_CSS = 'src/sass',
+const SRC_JS = 'src/js',
+	  SRC_CSS = 'src/sass',
       SRC_IMAGES = 'src/images-new',
       ASSETS_FOLDER = './wp-content/themes/diversity/assets';
 
-mix.sass(`${SRC_CSS}/style-new.scss`, ASSETS_FOLDER)
+mix.js(`${SRC_JS}/app.js`, ASSETS_FOLDER)
+   .sass(`${SRC_CSS}/style-new.scss`, ASSETS_FOLDER)
    .options({
       processCssUrls: false
    })

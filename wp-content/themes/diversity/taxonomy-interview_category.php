@@ -37,9 +37,9 @@ get_header();
 		$articles = new WP_Query($article_args);
 		if ($articles->have_posts()) {
     ?>
-	<section class="l-interview__content">
+	<section class="l-interview__content" id="interview-list">
 		<div class="l-container">
-			<h2>インタビュー一覧</h2>
+			<h2><a href="<?php echo HOME_URL; ?>interview#interview-list">インタビュー一覧</a></h2>
 			<?php 
 				$categories = get_terms([
 				    'taxonomy' => 'interview_category',
@@ -49,7 +49,7 @@ get_header();
 			<ul class="l-interview__categories u-flex">
 				<?php foreach($categories as $cat) { ?>
 				<li>
-					<a href="<?php echo get_category_link( $cat->term_id ) ?>" class="u-flex u-flex--center <?php echo $cat->term_id == get_queried_object()->term_id ? 'active' : ''; ?>"><?php echo $cat->name; ?></a>
+					<a href="<?php echo get_category_link( $cat->term_id ) ?>#interview-list" class="u-flex u-flex--center <?php echo $cat->term_id == get_queried_object()->term_id ? 'active' : ''; ?>"><?php echo $cat->name; ?></a>
 				</li>
 				<?php } ?>
 			</ul>
@@ -62,7 +62,7 @@ get_header();
 				<li class="interview-block">
 					<a href="<?php echo the_permalink(); ?>">
 						<div class="interview-block__image">
-							<img src="<?php echo $featured_image; ?>" alt="">
+							<div class="interview-block__img u-bg-fill" style="background-image: url(<?php echo $featured_image; ?>);"></div>
 						</div>
 						<p class="interview-block__tagline"><?php the_field('tagline'); ?></p>
 						<p class="interview-block__company"><?php the_field('company'); ?></p>

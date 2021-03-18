@@ -45,8 +45,7 @@
 .l-single__eyecatch-history {
   padding-left: 25px;
   line-height: 1.8;
-  opacity: .3;
-  border-left: 5px solid rgba(112,112,112,.5);
+  border-left: 5px solid rgb(21,21,21);
 
   @include max-screen($breakpoint-mobile) {
     width: 80%;
@@ -152,7 +151,7 @@
   font-size: 1.2rem;
 
   @include max-screen($breakpoint-mobile) {
-    font-size: .9rem;
+    font-size: .8rem;
   }
 
   a {
@@ -302,6 +301,16 @@
 
     @include max-screen($breakpoint-mobile) {
       font-size: 2.8rem;
+    }
+
+    &:hover {
+      a {
+        color: $color-primary;
+      }
+    }
+
+    a {
+      transition: color $duration $easing;
     }
   }
 
