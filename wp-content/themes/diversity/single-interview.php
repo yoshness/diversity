@@ -38,14 +38,14 @@ get_header();
 		</div>
 	</div>
 	<div class="l-single__block u-flex">
-		<img src="<?php the_field('left_block_image'); ?>">
+		<div class="l-single__block__image u-bg-fill" style="background-image: url(<?php the_field('left_block_image'); ?>);"></div>
 		<div class="l-single__block-content">
 			<h3><?php the_field('left_block_heading'); ?></h3>
 			<p><?php the_field('left_block_description'); ?></p>
 		</div>
 	</div>
 	<div class="l-single__block l-single__block--alternate u-flex">
-		<img src="<?php the_field('right_block_image'); ?>">
+		<div class="l-single__block__image u-bg-fill" style="background-image: url(<?php the_field('right_block_image'); ?>);"></div>
 		<div class="l-single__block-content">
 			<h3><?php the_field('right_block_heading'); ?></h3>
 			<p><?php the_field('right_block_description'); ?></p>
@@ -53,7 +53,7 @@ get_header();
 	</div>
 	<div class="l-single__block l-single__block--wide">
 		<div class="l-container u-flex">
-			<img src="<?php the_field('wide_block_image'); ?>">
+			<div class="l-single__block__image u-bg-fill" style="background-image: url(<?php the_field('wide_block_image'); ?>);"></div>
 			<div class="l-single__block-content">
 				<h3><?php the_field('wide_block_heading'); ?></h3>
 				<p><?php the_field('wide_block_description'); ?></p>

@@ -33,7 +33,7 @@
 
   img {
     width: 29%;
-    height: auto;
+    height: 180px;
 
     object-fit: contain;
     @include max-screen($breakpoint-mobile) {
@@ -122,18 +122,18 @@
   }
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     line-height: 2;
   }
   img {
-    &:first-of-type {
+    &.l-inclusion__notice-left {
       width: 285px;
 
       @include max-screen($breakpoint-mobile) {
         width: 200px;
       }
     }
-    &:last-of-type {
+    &.l-inclusion__notice-right {
       width: 95px;
       position: absolute;
       right: 85px;

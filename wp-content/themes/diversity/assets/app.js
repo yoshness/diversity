@@ -10981,14 +10981,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 function initSliders() {
-	if ($(window).width() >= 768) {
-		var _$$slick;
+	var _$$slick;
 
-		$('#js-related-slider').slick((_$$slick = {
-			infinite: true,
-			speed: 500
-		}, _defineProperty(_$$slick, 'infinite', false), _defineProperty(_$$slick, 'cssEase', 'ease-out'), _defineProperty(_$$slick, 'slidesToShow', 3), _defineProperty(_$$slick, 'prevArrow', $('#js-related-slider').next().find('.js-slider-prev')), _defineProperty(_$$slick, 'nextArrow', $('#js-related-slider').next().find('.js-slider-next')), _$$slick));
-	}
+	$('#js-related-slider').slick((_$$slick = {
+		infinite: true,
+		speed: 500
+	}, _defineProperty(_$$slick, 'infinite', false), _defineProperty(_$$slick, 'cssEase', 'ease-out'), _defineProperty(_$$slick, 'slidesToShow', 3), _defineProperty(_$$slick, 'prevArrow', $('#js-related-slider').next().find('.js-slider-prev')), _defineProperty(_$$slick, 'nextArrow', $('#js-related-slider').next().find('.js-slider-next')), _defineProperty(_$$slick, 'responsive', [{
+		breakpoint: 768,
+		settings: {
+			slidesToShow: 2
+		}
+	}]), _$$slick));
 }
 
 /***/ }),

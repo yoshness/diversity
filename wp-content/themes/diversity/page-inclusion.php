@@ -115,9 +115,10 @@ get_header();
       </ul>
       <div class="l-inclusion__notice">
         <p>※大東コーポレートサービスは、障がい者雇用を目的に、大東建託株式会社の特例子会社として、2005年に設立されました。障がいのある人もない人も、一緒になって働くことの楽しさと喜びを共有し、一人ひとりが多様な個性と能力を活かせるよう、様々な働きやすい職場環境作りを推進しています。2018年には、「障がい者を多数雇用し活躍している企業であること」、「障がい特性に配慮した雇用管理、および雇用形態の見直しなどが実施されていること」が評価され、厚生労働省より「障害者活躍企業」として認証されました。</p>
-        <p>大東コーポレートサービス公式サイト  https://www.daito-copo.com/news/</p>
-        <img src="<?php echo IMAGE_URL;  ?>inclusion/notice-1.png" alt="">
-        <img src="<?php echo IMAGE_URL;  ?>inclusion/notice-2.png" alt="">
+        <a href="https://www.daito-copo.com/news/" target="_blank">
+          <img src="<?php echo IMAGE_URL;  ?>inclusion/notice-1.png" class="l-inclusion__notice-left" alt="">
+        </a>
+        <img src="<?php echo IMAGE_URL;  ?>inclusion/notice-2.png" class="l-inclusion__notice-right" alt="">
       </div>
     </div>
   </div>

@@ -300,9 +300,9 @@ function topics() {
     });
     _current--;
 
-    setTimeout(() => {
+    setTimeout(function() {
       updateNav();
-    }, 100);
+    }, 300);
   });
 
   next.addEventListener('click', function () {
@@ -315,9 +315,9 @@ function topics() {
     });
     _current++;
 
-    setTimeout(() => {
+    setTimeout(function() {
       updateNav();
-    }, 100);
+    }, 300);
   });
 
   bottom.addEventListener('click', function () {
